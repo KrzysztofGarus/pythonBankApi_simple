@@ -47,7 +47,6 @@ def withdraw():
     if number in BankAccount.bank_accounts:
         account = BankAccount.bank_accounts[number]
         return account.withdraw(amount)
-        return
     else:
         return 'Account number does not exist'
 
